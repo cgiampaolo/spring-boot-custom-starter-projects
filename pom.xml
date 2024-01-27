@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.home.starter</groupId>
+    <artifactId>spring-boot-custom-starter-projects</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-custom-starter-projects</name>
+    <description>spring-boot-custom-starter-projects</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-boot-custom-modules</module>
+        <module>spring-boot-custom-autoconfigure</module>
+        <module>spring-boot-custom-starter</module>
+        <module>rest-sample</module>
+        <module>spring-boot-custom-starter-web</module>
+    </modules>
+</project>

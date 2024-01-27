@@ -1,0 +1,5 @@
+custom:
+  openapi:
+    server: http://localhost:8080
+    title: OpenaApiCustomStarter
+    description: OpenaApiCustomStarterDescription

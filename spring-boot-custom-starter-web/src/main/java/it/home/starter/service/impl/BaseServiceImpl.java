@@ -7,6 +7,8 @@ import it.home.starter.controller.dto.FilterCriteriaDto;
 import it.home.starter.controller.page.BasePage;
 import it.home.starter.service.BaseService;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -66,12 +68,7 @@ public class BaseServiceImpl implements BaseService {
     }
 
     @Override
-    public ByteArrayResource generateXLSXObject(Class<BaseDto> type, List<String> idList) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
-        return null;
-    }
-
-    @Override
-    public ByteArrayResource generateCSVObject(Class<BaseDto> type, List<String> idList) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+    public Resource export(String format, List<String> objectIds) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
         return null;
     }
 

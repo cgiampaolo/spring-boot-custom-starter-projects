@@ -69,7 +69,7 @@ public class BaseRestControllerImpl<T extends BaseService> implements BaseRestCo
 
     @Override
     public ResponseEntity<Resource> export(String format, List<String> idList) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
-        return null;
+        return ResponseEntity.ok(baseService.export(format,idList));
     }
     @Override
     public ResponseEntity<BasePage<BaseDto>> filter(Integer pageNumber, Integer pageSize, String sort, FilterCriteriaDto filterCriteriaDto) throws JsonProcessingException {

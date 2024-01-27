@@ -6,6 +6,8 @@ import it.home.starter.controller.dto.DeletedResponseDto;
 import it.home.starter.controller.dto.FilterCriteriaDto;
 import it.home.starter.controller.page.BasePage;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.io.IOException;
@@ -34,9 +36,7 @@ public interface BaseService{
 
     DeletedResponseDto deleteAll();
 
-    ByteArrayResource generateXLSXObject(Class<BaseDto> type, List<String> idList) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException;
-
-    ByteArrayResource generateCSVObject(Class<BaseDto> type, List<String> idList) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException;
+    Resource export(String format, List<String> objectIds) throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException;
 
     BasePage<BaseDto> getAllPageableFiltered(FilterCriteriaDto filterCriteriaDto, Integer pageSize, Integer pageNumber) throws JsonProcessingException;
 

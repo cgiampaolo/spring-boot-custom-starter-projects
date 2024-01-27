@@ -6,9 +6,7 @@ import it.home.starter.controller.dto.DeletedResponseDto;
 import it.home.starter.controller.dto.FilterCriteriaDto;
 import it.home.starter.controller.page.BasePage;
 import it.home.starter.service.BaseService;
-import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

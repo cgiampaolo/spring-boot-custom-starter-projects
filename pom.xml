@@ -14,5 +14,7 @@
         <module>spring-boot-custom-starter</module>
         <module>rest-sample</module>
         <module>spring-boot-custom-starter-web</module>
+        <module>rest-jpa-sample</module>
+        <module>spring-boot-custom-jpa</module>
     </modules>
 </project>
